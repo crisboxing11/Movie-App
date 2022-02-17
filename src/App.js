@@ -1,11 +1,19 @@
 import React from 'react';
-import { Layout, Menu, Breadcrumb } from "antd";
+import { Layout, Menu, Breadcrumb, Carousel} from "antd";
 import './Style/App.css';
 
 
 function App() {
 
   const { Header, Content, Footer } = Layout;
+
+  const contentStyle = {
+    height: "160px",
+    color: "#fff",
+    lineHeight: "160px",
+    textAlign: "center",
+    background: "#364d79",
+  };
 
   return (
     <div>
@@ -20,13 +28,26 @@ function App() {
           </Menu>
         </Header>
         <Content style={{ padding: "0 50px" }}>
-          <Breadcrumb style={{ margin: "16px 0" }}>
-            
-          </Breadcrumb>
-          <div className="site-layout-content">Content</div>
+          <Breadcrumb style={{ margin: "16px 0" }}></Breadcrumb>
+          <div className="site-layout-content">
+            <Carousel autoplay>
+              <div>
+                <h3 style={contentStyle}>1</h3>
+              </div>
+              <div>
+                <h3 style={contentStyle}>2</h3>
+              </div>
+              <div>
+                <h3 style={contentStyle}>3</h3>
+              </div>
+              <div>
+                <h3 style={contentStyle}>4</h3>
+              </div>
+            </Carousel>
+          </div>
         </Content>
         <Footer style={{ textAlign: "center" }}>
-          Ant Design ©2018 Created by Ant UED
+          Made by Cristian Arroyo Colon
         </Footer>
       </Layout>
       , mountNode,
