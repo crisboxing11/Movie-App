@@ -75,7 +75,6 @@ function App() {
           </Layout>
         </Layout>
       </Layout>
-  
     </div>
   );
 }
