@@ -1,5 +1,6 @@
 import React from 'react';
 import { Layout, Menu, Breadcrumb } from "antd";
+import firebase from './firebase'
 import {
   UserOutlined,
   LaptopOutlined,
@@ -10,6 +11,8 @@ import './Style/App.css';
 
 function App() {
 
+  const ref = firebase.firestore().collection('users');
+console.log(ref);
  const { SubMenu } = Menu;
  const { Header, Content, Sider } = Layout;
 
