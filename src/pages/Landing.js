@@ -8,10 +8,11 @@ import {
   Button,
   Grid,
 } from "@mui/material";
+import { Nav } from '../components/Index'
 
 const Landing = () => {
   return (
-  <Typography variant="h1">Hello Landing!</Typography>
+    <Nav />
   )
 }
 
