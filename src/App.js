@@ -1,9 +1,14 @@
 import React from 'react'
+import { Container,Card, CssBaseline, Typography} from '@mui/material'
 
 const App = () => {
   return (
-    <div>Hello</div>
-  )
+    <div>
+      <CssBaseline />
+      <Typography variant="h4" component="h1"> Hello World! </Typography>
+      Hello
+    </div>
+  );
 }
 
 export default App
