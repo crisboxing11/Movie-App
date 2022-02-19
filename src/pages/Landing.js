@@ -11,7 +11,7 @@ import {
 
 const Landing = () => {
   return (
-    <div>Landing Pager!!!</div>
+  <Typography variant="h1">Hello Landing!</Typography>
   )
 }
 

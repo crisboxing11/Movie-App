@@ -10,9 +10,10 @@ import { Link, Route, Routes } from 'react-router-dom'  //<Route path="/" elemen
 
 const App = () => {
   return (
-    <div>
-      <Typography variant="h1">Buba Chupa</Typography>
-    </div>
+    <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/login" element={<Login />} />
+    </Routes>
   );
 }
 
