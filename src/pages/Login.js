@@ -11,7 +11,7 @@ import {
 
 const Login = () => {
   return (
-    <Typography variant="h4">Login Pupa Shoo</Typography>
+    <Typography variant="h1">Login Pupa Shoo</Typography>
   )
 }
 
