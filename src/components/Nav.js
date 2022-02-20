@@ -25,8 +25,11 @@ const Nav = () => {
     aria-label="menu"
     sx={{mr:2}}
     >
-
+<MenuIcon />
     </IconButton>
+    <Typography variant="h6" component="div" sx={{ flexGrow: 1}}>
+        Guinea
+    </Typography>
 </Toolbar>
 </AppBar>
   </Box>
