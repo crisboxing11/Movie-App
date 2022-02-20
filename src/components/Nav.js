@@ -12,10 +12,15 @@ import {
     Toolbar,    
     IconButton,
     createTheme,
+    Avatar,
+    MenuItem,
+    Tooltip,
+    Menu,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
-
+const pages = ["Products", "Pricing", "Blog"];
+const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Nav = () => {
     const theme = createTheme({
@@ -31,6 +36,23 @@ const Nav = () => {
 
         }
     })
+     const [anchorElNav, setAnchorElNav] = React.useState(null);
+     const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+     const handleOpenNavMenu = (event) => {
+       setAnchorElNav(event.currentTarget);
+     };
+     const handleOpenUserMenu = (event) => {
+       setAnchorElUser(event.currentTarget);
+     };
+
+     const handleCloseNavMenu = () => {
+       setAnchorElNav(null);
+     };
+
+     const handleCloseUserMenu = () => {
+       setAnchorElUser(null);
+     };
     
   return (
     <Box className="bar" >
