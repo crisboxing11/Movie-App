@@ -1,4 +1,5 @@
 import React from 'react'
+import '../Style/Nav.css'
 import {
   Container,
   Card,
@@ -10,13 +11,13 @@ import {
   AppBar,
     Toolbar,    
     IconButton,
-    MenuIcon
 } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const Nav = () => {
   return (
   <Box>
-<AppBar position="static">
+<AppBar className="bar" position="static" sx={{ width: 3/4, mx: 1/2}}>
 <Toolbar>
     <IconButton 
     size="large"
@@ -30,7 +31,7 @@ const Nav = () => {
     <Typography variant="h6" component="div" sx={{ flexGrow: 1}}>
         Guinea
     </Typography>
-    <Button colo="inherit">Login</Button>
+    <Button color="inherit">Login</Button>
 </Toolbar>
 </AppBar>
   </Box>

@@ -1,4 +1,4 @@
-import { useState, useEffetc } from 'react';
+import { useState, useEffect } from 'react';
 import imdb from '../components/apis/imdb';
 
 const useMovie = (defaultSearchTerm) => {
@@ -23,7 +23,7 @@ const useMovie = (defaultSearchTerm) => {
         }
     };
     
-    useEffetc(() => {
+    useEffect(() => {
         search(searchTerm);
     }, [searchTerm]);
     

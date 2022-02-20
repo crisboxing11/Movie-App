@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const options = {
+const imdb = {
   method: "GET",
   url: "https://imdb8.p.rapidapi.com/auto-complete",
   params: { q: "" },
@@ -11,10 +11,12 @@ const options = {
 };
 
 axios
-  .request(options)
+  .request(imdb)
   .then(function (response) {
     console.log(response.data);
   })
   .catch(function (error) {
     console.error(error);
   });
+
+  export default imdb
