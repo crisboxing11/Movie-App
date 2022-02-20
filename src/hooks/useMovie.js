@@ -29,3 +29,6 @@ const useMovie = (defaultSearchTerm) => {
     
     return [searchTerm, handleSearchTermChange, movies, errorMessage];
 }
+
+
+export default useMovie;
