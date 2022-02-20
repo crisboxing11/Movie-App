@@ -45,7 +45,7 @@ const Nav = () => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
             Guinea
           </Typography>
           <Button color="inherit">Login</Button>
