@@ -11,13 +11,30 @@ import {
   AppBar,
     Toolbar,    
     IconButton,
+    createTheme,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
+
+
 const Nav = () => {
+    const theme = createTheme({
+        palette: {
+            primary: {
+                type: "dark",
+                main: "#170441"
+            },
+            secondary: {
+              main: "#c10d4a"  
+
+            }
+
+        }
+    })
+    
   return (
-    <Box className="bar">
-      <AppBar position="static" sx={{ width: 3 / 4, mx: 1 / 2 }}>
+    <Box className="bar" >
+      <AppBar className="nav" position="static" sx={{ width: 3/4, bgcolor:"#170441"}} >
         <Toolbar>
           <IconButton
             size="large"
