@@ -7,11 +7,16 @@ import {
   Box,
   Button,
   Grid,
+  AppBar
 } from "@mui/material";
 
 const Nav = () => {
   return (
-    <div>Nav</div>
+  <Box>
+<AppBar position="static">
+
+</AppBar>
+  </Box>
   )
 }
 
