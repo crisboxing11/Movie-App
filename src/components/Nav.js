@@ -30,6 +30,7 @@ const Nav = () => {
     <Typography variant="h6" component="div" sx={{ flexGrow: 1}}>
         Guinea
     </Typography>
+    <Button colo="inherit">Login</Button>
 </Toolbar>
 </AppBar>
   </Box>
