@@ -58,7 +58,7 @@ const Nav = () => {
     
   return (
     <div className="bar">
-      <AppBar position="static" sx={{ width: 3/4, bgcolor: "#170441" }}>
+      <AppBar position="static" sx={{ width: 3 / 4, bgcolor: "#170441" }}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography
@@ -123,7 +123,11 @@ const Nav = () => {
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                  <Avatar
+                    className="avatar"
+                    src="/broken-image.jpg"
+                    sx={{ bgcolor: "#c10d4a", width: 56, height: 56 }}
+                  />
                 </IconButton>
               </Tooltip>
               <Menu
