@@ -21,8 +21,8 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import logo from "../assets/My project.png"
 
-const pages = ["Products", "Pricing", "About"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const pages = ["Categories", "Facts", "About"];
+const settings = ["Profile", "Dashboard", "Logout"];
 
 const Nav = () => {
     const theme = createTheme({
@@ -126,7 +126,7 @@ const Nav = () => {
                   <Avatar
                     className="avatar"
                     src="/broken-image.jpg"
-                    sx={{ bgcolor: "#c10d4a", width: 56, height: 56 }}
+                    sx={{ bgcolor: "#c10d4a", width: 50, height: 50 }}
                   />
                 </IconButton>
               </Tooltip>
