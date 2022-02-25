@@ -13,7 +13,12 @@ import { Nav } from '../components/Index'
 const Landing = () => {
   return (
     <Nav />
+    
   )
 }
 
 export default Landing
+
+
+
+//try designing in cloud ad
