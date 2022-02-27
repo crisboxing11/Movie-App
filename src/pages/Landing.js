@@ -19,7 +19,17 @@ import { Nav,Home} from '../components/Index'
 
 const Landing = () => {
   return (
-  <Home />
+    <div>  
+    <Nav />
+    <Home />
+    
+    
+    
+    </div>
+
+    
+
+
 
     
   
