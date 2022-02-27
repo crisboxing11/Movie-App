@@ -3,12 +3,9 @@ import '../Style/Nav.css'
 import { useState } from "react"
 import {
   Container,
-  Card,
-  CssBaseline,
   Typography,
   Box,
   Button,
-  Grid,
   AppBar,
     Toolbar,    
     IconButton,
@@ -38,6 +35,7 @@ const Nav = () => {
 
         }
     })
+    
      const [anchorElNav, setAnchorElNav] = useState(null);
      const [anchorElUser, setAnchorElUser] = useState(null);
 
@@ -68,7 +66,7 @@ const Nav = () => {
               sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
             >
               <span className="icon">
-                <img className="logo" src={logo} alt="logo" />{" "}
+                <img className="logo" src={logo} alt="logo" />
               </span>
             </Typography>
 
@@ -103,7 +101,7 @@ const Nav = () => {
               >
                 {pages.map((page) => (
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
+                    <Typography align="center">{page}</Typography>
                   </MenuItem>
                 ))}
               </Menu>

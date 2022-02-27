@@ -3,9 +3,10 @@ import { Container,Card, CssBaseline, Typography,Box,Button,Grid} from '@mui/mat
 import Landing from './pages/Landing'
 import Login from './pages/Login'   // <-- import Login
 import { Link, Route, Routes } from 'react-router-dom'  
-import useMovie from './hooks/useMovie'
+
 
 const App = () => {
+
   return (
     <Routes>
         <Route path="/" element={<Landing />} />
@@ -15,3 +16,6 @@ const App = () => {
 }
 
 export default App
+
+
+
