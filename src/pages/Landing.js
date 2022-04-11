@@ -15,13 +15,13 @@ import {
   createTheme,
   ThemeProvider,
 } from "@mui/material";
-import { Nav,Home} from '../components/Index'
+import { Nav,Home, Auth} from '../components/Index'
 
 const Landing = () => {
   return (
     <div>  
-    <Nav />
-    <Home />
+      <Auth />
+      
     
     
     
